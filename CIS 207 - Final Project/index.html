@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>L's Cleaning Company</title>
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+    <style>
+.container {
+  position: relative;
+  width: 75%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+</head>
+
+<body>
+
+  <header>
+  	<img src="images/magnolia.png" alt="Magnolia" width="85">
+    <h2>L's Cleaning Company</h2>
+    <h3>Make Your Dream Clean Come True!</h3>
+  </header>
+  <main>
+      
+    <nav>
+      <ul>
+          <li><a class="active" 
+                 href="index.html">Home</a></li>
+          
+          <li class="dropdown"><a style="color: white" href="services.html" class="dropbtn">Services</a>
+          
+          <ul>
+              <li class="dropdown-content">
+                  <a style="color: white" href="#">Routine Cleaning</a>
+                  <a style="color: white"
+                     href="#">Tailored Cleaning</a>
+                  <a style="color: white"
+                     href="#">Deep Cleaning</a>
+              </li>
+          </ul></li>
+          
+          <li><a style="color: white" href="about.html">About</a></li>
+          
+          
+          <li class="dropdown"><a style="color: white"href="social.html">Social</a>
+          
+          <ul>
+              <li class="dropdown-content">
+                  <a style="color: white" href="https://www.facebook.com/twolscleaningco/">Facebook</a>
+                  <a style="color: white"
+                     href="https://www.instagram.com/lscleaningco_al/">Instagram</a>
+                  <a style="color: white"
+                     href="#">Youtube</a>
+              </li>
+          </ul></li>
+          
+          
+          <li><a style="color: white"
+                 href="Final.html">Request</a></li>     
+        </ul>
+    </nav>
+      
+	<aside id="vert">
+   		<ul>
+   			<li><a href="Final.html">Book Now!</a></li>
+   			<li><a href="waitlist.html">Join Waitlist</a></li>
+   			<li><a href="https://www.paypal.com">Make a Payment</a></li>
+   			<li><a href="https://www.facebook.com/twolscleaningco/">Contact</a></li>
+		</ul>
+	</aside>
+    
+	<section>
+
+    	<h1>Product of the week</h1>
+		<p>
+        
+            <img src="images/Spring%20Cleaning.jpg" alt="Spring Cleaning" width="150"></p>
+            
+        
+        <p id="java">20% Off Spring Cleaning</p>
+
+        <button type="button" onclick="document.getElementById('java').style.fontSize='25px'">Zoom</button>    
+            
+		<h3>Referrals</h3>
+    	<p>Please let me know if someone a referred you so I can give that person a discount on their next cleaning!</p>
+        <p><strong> You can receive a discount for referring someone too! :)</strong></p>
+        
+        <h2>
+    <div class="container">
+    <img src="images/book.png" alt="We Have Openings!" class="image" 
+	usemap="#workmap" style="width:500">
+	
+    <div class="middle">
+    <div class="text">Book Now!</div>
+    </div>
+  
+    <map name="workmap">
+	<area shape="rect" coords="34, 44, 300, 350" alt="Book Now!"
+	href="Final.html"
+  
+         </div></h2>
+        
+	</section>
+  </main>
+
+  <footer>
+	<p>&copy; 2023 Alan Fearns</p>
+  </footer>
+</body>
+</html>
