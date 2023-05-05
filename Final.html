@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>Cleaning Request Form</title>
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    	}
+		body {
+			font: 100% Arial, Helvetica, sans-serif;
+			width: 500px;
+		    margin: 20px auto;
+		    padding: 20px;
+		    border: 2px solid pink;
+		}
+		h1 {
+			color: darkgreen; 
+			font-size: 160%;
+		}
+		h2 {
+			font-size: 135%;
+			padding: .5em 0;
+		}
+		label {
+			color: darkgreen;
+			float: left;
+			width: 8em;
+			font-weight: bold;
+			text-align: left;
+		}
+		input {
+			width: 15em;
+			margin: 0 0 .5em 1em;
+		}
+        
+        #box1
+        {
+        }
+        
+        #box2, #box3, #box4, #box5 {
+            text-align: left;
+        }
+        
+		#button, #reset {
+			width: 7em;
+			background-color: pink;
+			box-shadow: 2px 2px 0 darkgreen; }
+		#button {
+			margin-left: 9em;
+		}
+	</style>
+</head>
+
+<body>
+<h1>Cleaning Request Form</h1>
+<form name="myform" action="Cleaning Request Form.html" method="get">
+	
+	<h2>Contact information</h2>
+    <label for="firstname">First name:</label>
+    <input type="text" name="firstname" id="firstname" required><br>
+    <label for="lastname">Last name:</label>
+    <input type="text" name="lastname" id="lastname" required><br>
+    <label for="phone">Phone number:</label>
+    <input type="phone" name="phone" id="phone" autofocus required minLength="7"><br>
+    <label for="email">Email address:</label>
+    <input type="email" name="email" id="email" autofocus required><br>
+    
+    <h2>Home Information</h2>
+    <label for="box1">Pets?</label>
+    <input type="text" name="box1" id="box1" required><br>
+    <label for="city">Square Feet:</label>
+    <input type="text" name="feet" id="feet" required><br>
+    <label for="city">City/Town:</label>
+    <input type="text" name="city" id="city" required>
+    <script> text.match([A-Za-Z] {2} </script><br>
+    <label for="zip">Zip code:</label>
+    <input type="text" name="zip" id="zip" required maxlength="5">
+    <script> text.match(\d{5}) </script> <br>
+    
+    <h2>How did you hear about us?</h2>
+    <label for="box2">Word of Mouth:</label>
+    <input type="checkbox" name="box2" id="box2" value="Word of Mouth"><br>
+    <label for="box3">Facebook:</label>
+    <input type="checkbox" name="box3" id="box3" value="Facebook"><br>
+    <label for="box4">Instagram:</label>
+    <input type="checkbox" name="box4" id="box4" value="Instagram"><br>
+    <label for="box5">Other:</label>
+    <input type="checkbox" name="box5" id="box5" value="Other"><br>
+    
+    <h2>We will contact you soon!</h2>
+    <input type="submit" id="button" value="Submit">
+    <input type="reset" id="reset" value="Reset">
+     
+</form>
+</body>
+</html>
